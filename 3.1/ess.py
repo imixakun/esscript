@@ -94,12 +94,12 @@ while True:
             f.write(f'   if "{commands[5:]}" in event.raw_text:\n')
         print(colored("$: :...", "green"))
 
-    elif commands == "when == default":
+    elif commands == "default":
         with open("scripts/bot.py", "a") as f:
             f.write(f'   if event.raw_text in event.raw_text:\n')
         print(colored("$: :...", "green"))
 
-    elif commands == "end when == default":
+    elif commands == "end default":
         with open("scripts/bot.py", "a") as f:
             f.write(f'   elif event.raw_text in event.raw_text:\n')
         print(colored("$: :...", "green"))
